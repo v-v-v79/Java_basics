@@ -1,0 +1,99 @@
+	How to understant PRE-Increment(++i) and POST-Increment (i++) step by step in simple words:
+	
+	For example we have:
+
+	int a = 0; 
+	int b = 1;
+
+	And we run: 
+	System.out.println(a + b);
+
+	What's happenning with Computer:
+
+	Computer reads code from left to right and gets variables value.
+	First it gets value of "a" which is "0"
+	then it reads "+" operator 
+	then gets value of "b" which is "1"
+
+	Then Computer runs the line of code: System.out.println(a + b);
+
+	Result is: 1 (0 + 1 = 1)
+
+	Practice with code:
+	public static void main(String[] args) {
+        int a = 0;
+        int b = 1;
+
+        System.out.println(a + b);
+    }
+
+
+	1). PRE-Increment(++i)
+	If we would like to change value of "b" BEFORE Computer finish to run the code line we use PRE-Increment(++i) 
+	Pay ATTENTION that "++" operator is BEFORE "b"
+	Then it will be look like: 
+
+	System.out.println(a + (++b));
+
+	What's happenning with Computer:
+
+	Computer reads code from left to right and gets variables value.
+	First it gets value of "a" which is "0"
+	then it reads "+" operator 
+	then gets value of "++b" Copmuter understands "++b" and see that "++" is BEFORE "b" then calculate it and change value of "b" BEFORE finish to run code, 
+	COMPUTER gets value of "b" assigned as "2" (1 + 1 = 2)
+
+	Then Computer runs the line of code: System.out.println(a + (++b));
+	Result is 2 (0 + 2 = 2)
+	If you check now value of "b" and run System.out.println(b) it will be "2".
+
+	Practice with code:
+
+	public static void main(String[] args) {
+        int a = 0;
+        int b = 1;
+
+        System.out.println(a + b);
+        System.out.println(a + (++b));
+        System.out.println(b);
+    }
+
+
+	2). POST-Increment (i++)
+	If we would like to change value of "b" AFTER COMPUTER finish to run the code line and FOR NOW we need to save value of "b"
+	we use POST-Increment(i++) Pay ATTENTION that "++" operator is AFTER "b"
+	and then it will be look like: 
+
+	System.out.println(a + (b++));
+
+	Computer reads code from left to right and gets variables value.
+	First it gets value of "a" which is "0"
+	then reads "+" operator 
+	then gets value of "b" which is "1", BUT Computer WILL add "+1" to "b" value RIGHT AFTER it finish to run this line of code.
+
+	Computer runs the line of code: System.out.println(a + (b++));
+	Result is 1 (0 + 1 = 1)
+
+	BUT value of "b" is already "2", Computer added "+1" to "b" because it read POST-Increment(i++) operator and executed it.
+	If you run System.out.println(b) it will be "2".
+
+	Practice with code:
+
+	public static void main(String[] args) {
+        int a = 0;
+        int b = 1;
+
+        System.out.println(a + b);
+        System.out.println(a + (b++));
+        System.out.println(b);
+    }
+
+
+
+	
+
+
+
+
+
+	
