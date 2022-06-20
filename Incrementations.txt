@@ -1,4 +1,4 @@
-	How to understant PRE-Increment(++i) and POST-Increment (i++) step by step in simple words:
+	How to understand PRE-Increment(++i) and POST-Increment (i++) step by step in simple words:
 	
 	For example we have:
 
